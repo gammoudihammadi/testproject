@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = Newrest.Winrest.AutomaticFunctionnalTestsReport
+build_property.ProjectDir = C:\Users\TSI\source\projectwinrest\Newrest.Winrest.FunctionalTests\Newrest.Winrest.AutomaticFunctionnalTestsReport\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

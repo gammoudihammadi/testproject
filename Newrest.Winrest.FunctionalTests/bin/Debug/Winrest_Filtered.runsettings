@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="UseLoginOnce" value="Y" />
+
+    <!--dev-->
+    <Parameter name="Winrest_URL" value="https://winrest-testauto2dev-app.azurewebsites.net/" />
+    <Parameter name="Winrest_Cache" value="https://winrest-testauto2dev-app.azurewebsites.net/home/clearcache" />
+    <Parameter name="Winrest_Admin_Settings" value="https://winrest-testauto2dev-app.azurewebsites.net/admin/applicationSettings" />
+    <Parameter name="Winrest_CustomerPortalUrl" value="https://winrest-testauto2dev-app.azurewebsites.net/customerportal" />
+    <Parameter name="Winrest_Environnement" value="testauto2dev" />
+
+    <!--patch-->
+    <!--<Parameter name="Winrest_URL" value="https://winrest-testauto3-app.azurewebsites.net/" />
+    <Parameter name="Winrest_Cache" value="https://winrest-testauto3-app.azurewebsites.net/home/clearcache" />
+    <Parameter name="Winrest_Admin_Settings" value="https://winrest-testauto3-app.azurewebsites.net/admin/applicationSettings" />
+    <Parameter name="Winrest_CustomerPortalUrl" value="https://winrest-testauto3-app.azurewebsites.net/customerportal" />
+    <Parameter name="Winrest_Environnement" value="testauto3" />-->
+
+    <!--local-->
+    <!--<Parameter name="Winrest_URL" value="https://localhost:44314/" />
+    <Parameter name="Winrest_Cache" value="https://localhost:44314/home/clearcache" />
+    <Parameter name="Winrest_Admin_Settings" value="https://localhost:44314/admin/applicationSettings" />
+    <Parameter name="Winrest_CustomerPortalUrl" value="https://localhost:44314/customerportal" />-->
+
+
+    <Parameter name="Admin_UserName" value="wrfr.user01@newrest.eu" />
+    <Parameter name="Admin_Password" value="N3wrest01!" />
+    <Parameter name="MailBox_UserPassword" value="S3l3nium!01" />
+    <Parameter name="CustomerPortal_UserPassword" value="Selenium$31!" />
+    <Parameter name="Aircraft" value="B777" />
+    <Parameter name="AircraftBis" value="B737" />
+    <Parameter name="CategoryPriceList" value="COMPONENTES DE MENU" />
+    <Parameter name="CategoryService" value="BEBIDAS CALIENTES" />
+    <Parameter name="CategoryServiceDefault" value="BEBIDAS" />
+    <Parameter name="Certification" value="HALAL" />
+    <Parameter name="Claims_Item_Group" value="CATHAY" />
+    <Parameter name="ClaimsSupplier" value="TRE3 TRAVEL RETAIL, S.L." />
+    <Parameter name="CommentPriceList" value="This is my comment. It is a success" />
+    <Parameter name="CommentSupplier" value="This is a comment" />
+    <Parameter name="Currency" value="€" />
+    <Parameter name="Currency_NumberOfDecimal" value="3" />
+    <Parameter name="Customer" value="EMIRATES AIRLINES" />
+    <Parameter name="CustomerCode" value="UAE" />
+    <Parameter name="CustomerCodeSchedule" value="AEA" />
+    <Parameter name="CustomerDelivery" value="A.F.A. LANZAROTE" />
+    <Parameter name="CustomerDelivery2" value="CustomerDelivery2" />
+    <Parameter name="CustomerFromReinvoice" value="AEA - AIR EUROPA LINEAS AEREAS,S.A.U" />
+    <Parameter name="CustomerLP" value="SMARTWINGS, A.S. (TVS)" />
+    <Parameter name="CustomerLpFilter" value="TVS - SMARTWINGS, A.S. (TVS)" />
+    <Parameter name="CustomerLPFlight" value="CAT Genérico" />
+    <Parameter name="CustomerNameForProd" value="CustomerPrice 965874 Needs ProdMann" />
+    <Parameter name="CustomerNameForProd1" value="CustomerPrice 412563 Needs ProdMann" />
+    <Parameter name="CustomerOrderFreePrice" value="FreePriceCustomerOrder" />
+    <Parameter name="CustomersPriceList" value="COMISION ESPAÑOLA DE AYUDA AL REFUGIADO B" />
+    <Parameter name="CustomerSchedule" value="SMARTWINGS, A.S.  (TVS)" />
+    <Parameter name="CustomerScheduleCode" value="TVS" />
+    <Parameter name="CustomerToReinvoice" value="SHGTPC - TRE3 TRAVEL RETAIL SL GTPC" />
+    <Parameter name="CustomerType" value="Inflight" />
+    <Parameter name="CustomerType2" value="Colectividades" />
+    <Parameter name="CustomerType3" value="Financiero" />
+    <Parameter name="DatasheetGuestType" value="SERVICIOS PISTA" />
+    <Parameter name="DatasheetRecipe" value="RecipeForDatasheet" />
+    <Parameter name="DatasheetService" value="ServiceDatasheet" />
+    <Parameter name="DeliveryNameDR" value="#ALBACETE-NAF-36" />
+    <Parameter name="Delivery" value="CEAR SAN JUAN CENAS" />
+    <Parameter name="DeliveryCustomerPortal" value="DeliveryForCustomerPortal" />
+    <Parameter name="DownloadsPath" value="C:\ChromeDriverDownloads" />
+    <Parameter name="FlightService" value="Service for flight" />
+    <Parameter name="ForeignCurrency" value="$" />
+    <Parameter name="Guest" value="BC" />
+    <Parameter name="ImageTest" value="https://wrtest1.newrest.eu/images/LogoNewrestcolorreport.jpg" />
+    <Parameter name="Inventary_ID" value="000699" />
+    <Parameter name="InventoryPlace" value="MAD4" />
+    <Parameter name="InventoryVAT" value="3-Exo" />
+    <Parameter name="InvoiceCustomer" value="EMIRATES AIRLINES" />
+    <Parameter name="InvoiceCustomerAirportTax" value="TRE3 TRAVEL RETAIL SL ANE" />
+    <Parameter name="InvoiceCustomerCode" value="UAE" />
+    <Parameter name="InvoiceCustomerCodeAirportTax" value="SHANE" />
+    <Parameter name="InvoiceCustomerType" value="Inflight" />
+    <Parameter name="InvoiceCustomerWithForeignDevise" value="testForeignCustomer" />
+    <Parameter name="InvoiceCustomerWithForeignDeviseIcao" value="testFC" />
+    <Parameter name="InvoiceForeignDevise" value="$ Dolar Americano" />
+    <Parameter name="InvoiceService" value="HOT MEAL YC UAE" />
+    <Parameter name="InvoiceServiceAirportTax" value="CAJA CARTON CONTAINER BOB SHANE" />
+    <Parameter name="InvoiceServiceCategory" value="HOT MEAL YC UAE" />
+    <Parameter name="InvoiceServiceCategoryAirportTax" value="CAJA CARTON CONTAINER BOB SHANE" />
+    <Parameter name="InvoiceSite" value="BCN" />
+    <Parameter name="AllFlightsInSelectedPeriod" value="All flights in selected period" />
+    <Parameter name="InvoiceTaxName" value="Airport Tax" />
+    <Parameter name="InvoiceTaxType" value="Airport fee" />
+    <Parameter name="InvoiceWorkshop" value="Ensamblaje" />
+    <Parameter name="Item_Group" value="QATAR AIRWAYS" />
+    <Parameter name="Item_GroupBis" value="AMERICAN AIRLINES" />
+    <Parameter name="Item_Inventory" value="itemInventory" />
+    <Parameter name="Item_Keyword" value="TEST_KEY" />
+    <Parameter name="Item_Name" value="VCV BOWL LOZA" />
+    <Parameter name="Item_Name_PO" value="AEA HMI FIDEUA VERDURAS" />
+    <Parameter name="ItemNamePriceList" value="HOJALDRE AL QUESO DE CABRA 100 GRS" />
+    <Parameter name="ItemNamePriceListBis" value="POLLO TIRAS ASADAS VACIO" />
+    <Parameter name="Item_OutputForm" value="itemOutputForm" />
+    <Parameter name="Item_PackagingName" value="bolsa 1Kg" />
+    <Parameter name="Item_PackagingNameBis" value="Paquete" />
+    <Parameter name="Item_ProdUnit" value="UD" />
+    <Parameter name="Item_ReceiptNote" value="itemReceiptNote" />
+    <Parameter name="Item_Ref" value="MATERIAL CIA" />
+    <Parameter name="Item_SupplierInvoice" value="ItemForSupplierInvoice" />
+    <Parameter name="Item_SupplierInvoiceBis" value="OtherItemForSupplierInvoice" />
+    <Parameter name="Item_SupplierInvoiceGrp" value="ItemForSupplierInvoiceMemeGroupe" />
+    <Parameter name="Item_TaxType" value="3-Exo" />
+    <Parameter name="Item_Workshop" value="Ensamblaje" />
+    <Parameter name="Journal_Invoice" value="VTA" />
+    <Parameter name="Journal_SI" value="COMP" />
+    <Parameter name="Journal_RN" value="APU" />
+    <Parameter name="Journal_Inventory" value="APU" />
+    <Parameter name="Journal_OF" value="RE1" />
+    <Parameter name="Location" value="Economato" />
+    <Parameter name="MenuCustomerCode" value="0004C" />
+    <Parameter name="MenuService" value="ServiceMenu" />
+    <Parameter name="MenuServiceCustomer" value="AIR CPU SL" />
+    <Parameter name="MenuVariant" value="RENFE - ALMUERZO" />
+    <Parameter name="MenuVariantACE1" value="BASAL ADULTO/MAYORES - ALMUERZO" />
+    <Parameter name="MenuVariantACE2" value="BASAL ADULTO/MAYORES - CENA" />
+    <Parameter name="MenuVariantACE3" value="ADULTOS 300G - ALMUERZO" />
+    <Parameter name="MenuVariantACE4" value="BASAL COLEGIO - ALMUERZO" />
+    <!-- Flight Bob  -->
+    <Parameter name="Bob_Customer" value="SMARTWINGS, A.S.  (TVS)" />
+    <Parameter name="Bob_CustomerFilter" value="TVS - SMARTWINGS, A.S. (TVS)" />
+    <Parameter name="GuestNameBob" value="BOB" />
+    <Parameter name="LoadingPlanBob" value="LoadingPlan with LpCart" />
+    <Parameter name="LoadingPlanBobBis" value="LoadingPlan with LpCart bis" />
+    <Parameter name="LpCartNamebob" value="lpcart For Flight" />
+    <Parameter name="LpCartCodebob" value="Boblp" />
+    <Parameter name="LpCartNameBis" value="lpcart bob" />
+    <Parameter name="LpCartCodeBis" value="Bob" />
+    <Parameter name="TypeBob" value="BuyOnBoard" />
+    <Parameter name="ServiceBob" value="Service for BOB" />
+    <!-- End Flight Bob  -->
+    <!-- Needs -->
+    <Parameter name="Needs_Customer1" value="CustomerNeeds1" />
+    <Parameter name="Needs_Customer2" value="CustomerNeeds2" />
+    <Parameter name="Needs_Customer3" value="CustomerNeeds3" />
+    <Parameter name="Needs_CustomerCode1" value="CNM1" />
+    <Parameter name="Needs_CustomerCode2" value="CNM2" />
+    <Parameter name="Needs_CustomerCode3" value="CNM3" />
+    <Parameter name="Needs_DatasheetName1" value="datasheetNeeds1" />
+    <Parameter name="Needs_DatasheetNameMAD" value="datasheetNeedsMAD" />
+    <Parameter name="Needs_DatasheetName2" value="datasheetNeeds2" />
+    <Parameter name="Needs_DatasheetName3" value="datasheetNeeds3" />
+    <Parameter name="Needs_FlightNormal" value="FlightNeedsNormal - " />
+    <Parameter name="Needs_FlightNormalMAD" value="FlightNeedsNormalMAD - " />
+    <Parameter name="Needs_FlightVacuum" value="FlightNeedsVacuum - " />
+    <Parameter name="Needs_FlightValide" value="FlightNeedsValide - " />
+    <Parameter name="Needs_FlightSansDatasheet" value="FlightNeedsSsDatasheet - " />
+    <Parameter name="Needs_Item1" value="itemNeeds1" />
+    <Parameter name="Needs_Item2" value="itemNeeds2" />
+    <Parameter name="Needs_Item3" value="itemNeeds3" />
+    <Parameter name="Needs_Item4" value="itemNeeds4" />
+    <Parameter name="Needs_RecipeName1" value="recetteNeeds1" />
+    <Parameter name="Needs_RecipeName2" value="recetteNeeds2" />
+    <Parameter name="Needs_RecipeName3" value="recetteNeeds3" />
+    <Parameter name="Needs_ServiceNormal" value="ServiceNeedsNormal" />
+    <Parameter name="Needs_ServiceNormalMAD" value="ServiceNeedsNormalMAD" />
+    <Parameter name="Needs_ServiceVacuum" value="ServiceNeedsVacuum" />
+    <Parameter name="Needs_ServiceFlightValide" value="ServiceNeedsFlightValide" />
+    <Parameter name="Needs_ServiceSansDatasheet" value="ServiceNeedsSansDatasheet" />
+    <!-- Fin needs -->
+    <Parameter name="OutputFormPlaceFrom" value="MAD4" />
+    <Parameter name="Place" value="Economato" />
+    <Parameter name="PlaceFrom" value="Economato" />
+    <Parameter name="PlaceTo" value="Producción" />
+    <Parameter name="PlaceToOFSage" value="TRASPASOS A BCN" />
+    <Parameter name="PlaceToPartielle" value="MAD4" />
+    <!-- Prodman -->
+    <Parameter name="Prodman_Needs_CookingMode1" value="Cocina Caliente" />
+    <Parameter name="Prodman_Needs_CookingMode2" value="Vacío" />
+    <Parameter name="Prodman_Customer1" value="CustomerProdman1" />
+    <Parameter name="Prodman_Customer2" value="CustomerProdman2" />
+    <Parameter name="Prodman_Customer3" value="CustomerProdman3" />
+    <Parameter name="Prodman_CustomerCode1" value="CPM1" />
+    <Parameter name="Prodman_CustomerCode2" value="CPM2" />
+    <Parameter name="Prodman_CustomerCode3" value="CPM3" />
+    <Parameter name="Prodman_DatasheetName1" value="datasheetProdman1" />
+    <Parameter name="Prodman_DatasheetNameMAD" value="datasheetProdmanMAD" />
+    <Parameter name="Prodman_DatasheetName2" value="datasheetProdman2" />
+    <Parameter name="Prodman_DatasheetName3" value="datasheetProdman3" />
+    <Parameter name="Prodman_FlightNormal" value="FlightProdmanNormal - " />
+    <Parameter name="Prodman_FlightNormalMAD" value="FlightProdmanNormalMAD - " />
+    <Parameter name="Prodman_FlightVacuum" value="FlightProdmanVacuum - " />
+    <Parameter name="Prodman_FlightValide" value="FlightProdmanValide - " />
+    <Parameter name="Prodman_FlightSansDatasheet" value="FlightProdmanSsDatasheet - " />
+    <Parameter name="Prodman_Needs_GuestType1" value="FC" />
+    <Parameter name="Prodman_Needs_GuestType2" value="YC" />
+    <Parameter name="Prodman_Item1" value="itemProdman1" />
+    <Parameter name="Prodman_Item2" value="itemProdman2" />
+    <Parameter name="Prodman_Item3" value="itemProdman3" />
+    <Parameter name="Prodman_Item4" value="itemProdman4" />
+    <Parameter name="Prodman_Needs_Item_Group1" value="CHARCUTERIA" />
+    <Parameter name="Prodman_Needs_Item_Group2" value="AIR CANADA" />
+    <Parameter name="Prodman_Needs_Item_Group3" value="CREW SHOP" />
+    <Parameter name="Prodman_Needs_Item_Group4" value="NORWEGIAN" />
+    <Parameter name="Prodman_Needs_Item_Supplier1" value="AIR CPU, S.L." />
+    <Parameter name="Prodman_Needs_Item_Supplier2" value="TRE3 TRAVEL RETAIL, S.L." />
+    <Parameter name="Prodman_Needs_Item_Supplier3" value="AGUAS DANONE, S.A." />
+    <Parameter name="Prodman_RecipeName1" value="recetteProdman1" />
+    <Parameter name="Prodman_RecipeName2" value="recetteProdman2" />
+    <Parameter name="Prodman_RecipeName3" value="recetteProdman3" />
+    <Parameter name="Prodman_Needs_RecipeType1" value="PLATO CALIENTE" />
+    <Parameter name="Prodman_Needs_RecipeType2" value="ENSALADA" />
+    <Parameter name="Prodman_Needs_RecipeType3" value="BOCADILLO/SANDWICH" />
+    <Parameter name="Prodman_Needs_ServiceCategory1" value="BEBIDAS" />
+    <Parameter name="Prodman_Needs_ServiceCategory2" value="FRUTA" />
+    <Parameter name="Prodman_Needs_ServiceCategory3" value="BEBIDAS CALIENTES" />
+    <Parameter name="Prodman_Needs_ServiceType" value="Food" />
+    <Parameter name="Prodman_ServiceNormal" value="ServiceProdmanNormal" />
+    <Parameter name="Prodman_ServiceNormalMAD" value="ServiceProdmanNormalMAD" />
+    <Parameter name="Prodman_ServiceVacuum" value="ServiceProdmanVacuum" />
+    <Parameter name="Prodman_ServiceFlightValide" value="ServiceProdmanFlightValide" />
+    <Parameter name="Prodman_ServiceSansDatasheet" value="ServiceProdmanSansDatasheet" />
+    <Parameter name="Prodman_Needs_RecipeVariant" value="FLIGHT + FLIGHT" />
+    <Parameter name="Prodman_Needs_Workshop1" value="Cocina Caliente" />
+    <Parameter name="Prodman_Needs_Workshop2" value="Ensamblaje" />
+    <Parameter name="Prodman_Needs_Workshop3" value="Corte" />
+    <!-- Fin prodman -->
+
+    <!-- Début production -->
+    <Parameter name="Production_Site1" value="ACE" />
+    <Parameter name="Production_Site2" value="MAD" />
+    <Parameter name="Production_Meal1" value="ALMUERZO" />
+    <Parameter name="Production_Meal2" value="CENA" />
+    <Parameter name="Production_GuestType1" value="FC VEG" />
+    <Parameter name="Production_GuestType2" value="BC" />
+    <Parameter name="Production_GuestCommercialName1" value="FC VEG" />
+    <Parameter name="Production_GuestCommercialName2" value="BUSINESS" />
+    <Parameter name="Production_Workshop1" value="Cocina Caliente" />
+    <Parameter name="Production_Workshop2" value="Ensamblaje" />
+    <Parameter name="Production_Workshop3" value="Corte" />
+    <Parameter name="Production_Foodpack1" value="Individual" />
+    <Parameter name="Production_Foodpack2" value="Multiporcion" />
+    <Parameter name="Production_CustomerType1" value="Colectividades" />
+    <Parameter name="Production_CustomerType2" value="Financiero" />
+    <Parameter name="Production_Service1" value="BEBIDAS" />
+    <Parameter name="Production_ServiceType" value="Food" />
+    <Parameter name="Production_ItemGroup1" value="CHARCUTERIA" />
+    <Parameter name="Production_ItemGroup2" value="CREW SHOP" />
+    <Parameter name="Production_ItemSupplier1" value="TRE3 TRAVEL RETAIL, S.L." />
+    <Parameter name="Production_ItemSupplier2" value="AGUAS DANONE, S.A." />
+    <Parameter name="Production_ItemTaxType" value="3-Exo" />
+    <Parameter name="Production_ItemYield" value="100" />
+    <Parameter name="Production_ItemProdUnit" value="UD" />
+    <Parameter name="Production_ItemPackagingName" value="bolsa 1Kg" />
+    <Parameter name="Production_RecipeVariant1ForACE" value="BASAL ADULTO/MAYORES + ALMUERZO" />
+    <Parameter name="Production_RecipeVariant1ForMAD" value="RENFE + ALMUERZO" />
+    <Parameter name="Production_RecipeVariant2ForACE" value="BASAL COLEGIO + ALMUERZO" />
+    <Parameter name="Production_RecipeType1" value="PLATO CALIENTE" />
+    <Parameter name="Production_RecipeType2" value="ENSALADA" />
+    <Parameter name="Production_RecipeType3" value="BOCADILLO/SANDWICH" />
+    <Parameter name="Production_MenuVariant1ForACE" value="BASAL ADULTO/MAYORES - ALMUERZO" />
+    <Parameter name="Production_MenuVariant1ForMAD" value="RENFE - ALMUERZO" />
+    <Parameter name="Production_MenuVariant2ForACE" value="BASAL COLEGIO - ALMUERZO" />
+    <Parameter name="Production_CookingMode1" value="Cocina Caliente" />
+    <Parameter name="Production_CookingMode2" value="Vacío" />
+    <!-- Fin production -->
+
+    <Parameter name="ReceiptNotesSupplier" value="TRE3 TRAVEL RETAIL, S.L." />
+    <Parameter name="RecipeAllergen" value="Altramuces/Lupin" />
+    <Parameter name="RecipeDietaryType" value="Ensalada" />
+    <Parameter name="RecipeIngredient" value="COOKIE LARGE CHIP NEGRA" />
+    <Parameter name="RecipeIngredientBis" value="310009_AAL_CANADA DRY TONIC IPR" />
+    <Parameter name="RecipeMeal" value="ALMUERZO" />
+    <Parameter name="RecipeName" value="supplyOrderRecipe" />
+    <Parameter name="RecipeName1" value="supplyOrderRecipeBis" />
+    <Parameter name="RecipeType" value="PLATO CALIENTE" />
+    <Parameter name="RecipeTypeBis" value="ENSALADA CREW" />
+    <Parameter name="RecipePriceList" value="RecipePriceList" />
+    <Parameter name="RecipeVariant" value="RENFE + ALMUERZO" />
+    <Parameter name="RecipeVariantBis" value="FLIGHT + FLIGHT" />
+    <Parameter name="RecipeVariant3" value="BASAL ADULTO/MAYORES + ALMUERZO" />
+    <Parameter name="Registration" value="B777" />
+    <Parameter name="Route" value="MAD-ACE" />
+    <Parameter name="RouteLP" value="ACE-AGP" />
+    <Parameter name="ServiceCustomerPortal" value="ServiceForCustomerPortal" />
+    <Parameter name="ServiceProdAce" value="Vicarious Bliss To ACE" />
+    <Parameter name="ServiceProdBcn" value="Kakarot face sky to BCN" />
+    <Parameter name="ServiceProdMad" value="Nurato deth force to MAD" />
+    <Parameter name="ServicenoDatasheet" value="Without data sea sheet to ACE" />
+    <Parameter name="ServiceCategorie" value="Categorie aphex Twins up to ACE" />
+    <Parameter name="ServiceNeedsAce" value="ACE NeedsService" />
+    <Parameter name="ServiceNeedsBcn" value="BCN NeedsService" />
+    <Parameter name="ServiceNeedsMad" value="MAD NeedsService" />
+    <Parameter name="ServicenoDatasheetNeeds" value="ACE noDataSheetNeedsService" />
+    <Parameter name="ServiceNeedsCategorie" value="ACE NeedsCategorieService" />
+    <Parameter name="ServiceNameLP" value="AIR FRESHNER TVS" />
+    <Parameter name="ServiceTestExcel" value="C:\NewRest_Testing\service.xlsx" />
+    <Parameter name="Site" value="MAD" />
+    <Parameter name="SiteBis" value="IBZ" />
+    <Parameter name="SiteInventory" value="BCN" />
+    <Parameter name="SiteLP" value="ACE" />
+    <Parameter name="SitePriceList" value="ALC" />
+    <Parameter name="SiteToFlight" value="BCN" />
+    <Parameter name="SiteToFlightBob" value="AGP" />
+    <Parameter name="SiteToOFSage" value="BCN" />
+    <Parameter name="Supplier" value="A REFERENCIAR" />
+    <Parameter name="SupplierReferenceTest" value="PLG00030" />
+    <Parameter name="SupplierInvoice" value="AIR CPU, S.L." />
+    <Parameter name="SupplierInvoiceDeviation" value="DEVIATION" />
+    <Parameter name="SupplierInvoiceItemGroup" value="QATAR AIRWAYS" />
+    <Parameter name="SupplierInvoiceItemGroupBis" value="AMERICAN AIRLINES" />
+    <Parameter name="SupplierInvoiceItemGroupCode" value="QATAR" />
+    <Parameter name="SupplierInvoiceItemGroupCodeBis" value="AMERI" />
+    <Parameter name="SupplierInvoiceItem" value="TULIPA SALMON ATLANTICO 35 GR" />
+    <Parameter name="SupplierInvoiceManualTax" value="MANUAL TAX FOR SI" />
+    <Parameter name="SupplierPartielle" value="TRE3 TRAVEL RETAIL, S.L." />
+    <Parameter name="SupplierPo" value="AIR CPU, S.L." />
+    <Parameter name="ServiceName" value="RAW MATERIALS BUFFET" />
+    <Parameter name="ServiceCategory" value="BEBIDAS" />
+    <Parameter name="TaxTypeInvoicesExportSage" value="1-Reducido" />
+    <Parameter name="TaxTypeSupplierInvoices" value="1-Reducido" />
+    <Parameter name="TaxTypeSupplierInvoicesExportSage" value="2-General" />
+    <Parameter name="Type" value="Dotation" />
+    <Parameter name="VatPriceList" value="5-SuperReducido" />
+    <Parameter name="Variant" value="BASAL ADULTO/MAYORES - ALMUERZO" />
+    <Parameter name="Workshop" value="Ensamblaje" />
+    <Parameter name="Workshop1" value="Cocina Caliente" />
+    <Parameter name="DatePickerFormat" value="ToBeUpdated" />
+    <!-- lpcart -->
+    <Parameter name="AircraftLpCart" value="0FICIN" />
+    <Parameter name="CommentLpCart" value="Comment" />
+    <Parameter name="CustomerLpCart" value="366 - A.F.A. LANZAROTE" />
+    <Parameter name="CustomerLpCart1" value="BRO - 2 EXCEL AVIATION LTD" />
+    <Parameter name="CustomerLpCart2" value="AEE - AEGEAN AIRLINES" />
+    <Parameter name="FlightLpCart" value="Albata - " />
+    <Parameter name="FlightLpCart1" value="Bonnata - " />
+    <Parameter name="LpCartCode" value="1234" />
+    <Parameter name="LpCartCode1" value="3456" />
+    <Parameter name="LpCartCode2" value="4322" />
+    <Parameter name="LpCartCode3" value="9999" />
+    <Parameter name="LpCartName" value="Elaquste" />
+    <Parameter name="LpCartName1" value="Dercamte" />
+    <Parameter name="LpCartName2" value="Calomato" />
+    <Parameter name="LpCartName3" value="NewLpcart" />
+    <Parameter name="LpCartName4" value="yacamil" />
+    <Parameter name="LpCartName5" value="ImportLpcart" />
+    <Parameter name="TrolleyName" value="accotro" />
+    <Parameter name="TrolleyName1" value="bicotro" />
+    <Parameter name="TrolleySchemeName" value="accotroScheme" />
+    <Parameter name="TrolleySchemeName1" value="bicotroScheme" />
+    <Parameter name="SiteLpCart" value="ACE" />
+    <Parameter name="SiteLpCart1" value="AGP" />
+    <Parameter name="SiteLpCart2" value="MAD" />
+    <!-- Fin lpCart -->
+    <!-- Trolley -->
+    <Parameter name="Carav Trole yaeh" value="Carav Trole yaeh" />
+    <Parameter name="CategorieBOB" value="BUY ON BOARD" />
+    <Parameter name="CodeTrolley" value="Code" />
+    <Parameter name="CodeTrolley1" value="bobe" />
+    <Parameter name="CodeTrolley2" value="des" />
+    <Parameter name="CodeTrolley3" value="Ale" />
+    <Parameter name="CustomerNamebis" value="SMARTWINGS, A.S.  (TVS)" />
+    <Parameter name="customerName1Trolley" value="VLM AIRLINES" />
+    <Parameter name="customerNameVLMTrolley" value="VLM - VLM AIRLINES" />
+    <Parameter name="DatasheetName" value="CACAHUETES 30 GRS (ACE)" />
+    <Parameter name="DatasheetName1" value="SOBRE TE (MAD)" />
+    <Parameter name="GuestTypeTrolley" value="ADULTOS 300G" />
+    <Parameter name="GuestTypeTrolley1" value="ASTRINGENTE / BLANDA ADULTO/MAYORES" />
+    <Parameter name="loadingPlanNameTrolley" value="test loading plan tr" />
+    <Parameter name="loadingPlanNameTrolleyBis" value="Bis loading plan tr bis" />
+    <Parameter name="TrolleyService" value="Trolley Service" />
+    <Parameter name="TrolleyService1" value="Bob Service for trolley" />
+    <Parameter name="trolleyFlightBob" value="trolleyFlightBob" />
+    <Parameter name="ServiceProductionTrolley" value="Prod" />
+    <Parameter name="ServiceProductionTrolley1" value="Drop" />
+    <Parameter name="SiteAalTrolley" value="AAL" />
+    <!-- Fin Trolley -->
+
+  </TestRunParameters>
+
+  <!-- Configurations for data collectors -->
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
+        <Configuration>
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="false"  xmlns="">
+            <!--<ScreenCaptureVideo bitRate="512" frameRate="60" quality="100" />-->
+            <ScreenCaptureVideo bitRate="1024" frameRate="30" quality="20" />
+          </MediaRecorder>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

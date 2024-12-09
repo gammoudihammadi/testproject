@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Newrest.Winrest.FunctionalTests</RootNamespace>
+    <AssemblyName>Newrest.Winrest.FunctionalTests</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.102.3.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.102.3\lib\netstandard2.0\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions, Version=5.4.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.5.4.2\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Email, Version=15.0.0.1143, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\packages\GemBox.Email.15.0.1143\lib\net35\GemBox.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.bouncy-castle-connector, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.bouncy-castle-connector.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.commons.8.0.5\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfua, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.pdfua.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=8.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.5\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="JSErrorCollector, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JSErrorCollector.0.6.1.0\lib\net40\JSErrorCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Mail, Version=3.0.22105.1207, Culture=neutral, PublicKeyToken=6dc438ab78a525b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mail.dll.3.0.22105.1207\lib\net48\Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.5.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>..\packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.6.0.0\lib\net461\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UglyToad.PdfPig, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.Core, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.DocumentLayoutAnalysis, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.DocumentLayoutAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.Fonts, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.Package, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.Package.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.Tokenization, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.Tokenization.dll</HintPath>
+    </Reference>
+    <Reference Include="UglyToad.PdfPig.Tokens, Version=0.1.5.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfPig.0.1.5\lib\net461\UglyToad.PdfPig.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="XLParser, Version=1.5.2.0, Culture=neutral, PublicKeyToken=63397e1e46bb91b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\XLParser.1.5.2\lib\net461\XLParser.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\EDI\EdiTests.cs" />
+    <Compile Include="Accounting\FreePrice\FreePriceTests.cs" />
+    <Compile Include="Clinic\Patient\PatientTest.cs" />
+    <Compile Include="CustomerPortal\CustomerPortalTests.cs" />
+    <Compile Include="Customers\Catalogs\CatalogTest.cs" />
+    <Compile Include="Customers\FoodPackets\FoodPacketsTest.cs" />
+    <Compile Include="Customers\Reconciliation\ReconciliationTest.cs" />
+    <Compile Include="Customers\Service\ServiceTest.cs" />
+    <Compile Include="Flights\Crew\CrewTest.cs" />
+    <Compile Include="Flights\TimeBlock\TimeBlockTest.cs" />
+    <Compile Include="Flights\ViewCustomer\ViewCustomerTest.cs" />
+    <Compile Include="Interim\InterimOrders\InterimOrdersTest.cs" />
+    <Compile Include="Interim\InterimReception\InterimReceptionTest.cs" />
+    <Compile Include="Jobs\Jobs\JobsTest.cs" />
+    <Compile Include="Jobs\ScheduledJobs\ScheduledJobsTest.cs" />
+    <Compile Include="Jobs\Settings\SettingsTests.cs" />
+    <Compile Include="Menus\FoodCosts\FoodCostsTests.cs" />
+    <Compile Include="PageObjects\Accounting\Edi\EdiCustomerInvoicesPage.cs" />
+    <Compile Include="PageObjects\Accounting\Edi\EdiCustomerOrderPage.cs" />
+    <Compile Include="PageObjects\Accounting\Edi\EdiPage.cs" />
+    <Compile Include="PageObjects\Accounting\Edi\EdiPurchaseOrdersPage.cs" />
+    <Compile Include="PageObjects\Accounting\Edi\EdiSupplierInvoicesPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\ManualCreditNoteCreatePage.cs" />
+    <Compile Include="PageObjects\Accounting\Reporting\ReportingPage.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\InterimOrderPage.cs" />
+    <Compile Include="PageObjects\Admin\CustomizableColumnsPage.cs" />
+    <Compile Include="PageObjects\Admin\DashboardUsagePage.cs" />
+    <Compile Include="PageObjects\Admin\HACCPDocumentSettingsPage.cs" />
+    <Compile Include="PageObjects\Clinic\Patient\PatientCreateModalPage.cs" />
+    <Compile Include="PageObjects\Clinic\Patient\PatientsPage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CreateNewMessageGroupModal.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerOrderPortalMessagesPage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalQtyByDayPage.cs" />
+    <Compile Include="PageObjects\Customers\Catalogs\CatalogPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerPricePage.cs" />
+    <Compile Include="PageObjects\Customers\Delivery\DeliveryMassiveDeletePage.cs" />
+    <Compile Include="PageObjects\Customers\FoodPackets\FoodPacketsPage.cs" />
+    <Compile Include="PageObjects\Customers\Reconciliation\ReconciliationPage.cs" />
+    <Compile Include="PageObjects\Customers\Reinvoice\CustomerPickMethod.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceCreateFoodPacketModal.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceEditLoadingScale.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceFoodPacketsPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceMassiveDeleteModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServicePricePageEditScaleForCycle.cs" />
+    <Compile Include="PageObjects\Flights\ClosingPeriods\ClosingPeriodsPage.cs" />
+    <Compile Include="PageObjects\Flights\Crew\CrewPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\BarsetEditModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\BarsetMultiCreateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\BarsetsPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightMassiveDeleteModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\HedomadairePage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlanMassiveDeleteModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansHistoryModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansPropagateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\TimeBlock\BulkChangeModal.cs" />
+    <Compile Include="PageObjects\Flights\TimeBlock\TimeBlockPage.cs" />
+    <Compile Include="PageObjects\Interim\InterimOrders\InterimOrdersCreateModalPage.cs" />
+    <Compile Include="PageObjects\Interim\InterimOrders\InterimOrdersFooter.cs" />
+    <Compile Include="PageObjects\Interim\InterimOrders\InterimOrdersGeneralInformation.cs" />
+    <Compile Include="PageObjects\Interim\InterimOrders\InterimOrdersItem.cs" />
+    <Compile Include="PageObjects\Interim\InterimOrders\InterimOrdersPage.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="PageObjects\Interim\InterimReceptions\InterimReceptionsCreateModalPage.cs" />
+    <Compile Include="PageObjects\Interim\InterimReceptions\InterimReceptionsGeneralInformation.cs" />
+    <Compile Include="PageObjects\Interim\InterimReceptions\InterimReceptionsItem.cs" />
+    <Compile Include="PageObjects\Interim\InterimReceptions\InterimReceptionsPage.cs" />
+    <Compile Include="PageObjects\Jobs\Jobs\CegidJobDetailPage.cs" />
+    <Compile Include="PageObjects\Jobs\Jobs\CegidJobPage.cs" />
+    <Compile Include="PageObjects\Jobs\Jobs\JobsPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\BankCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\FileFlowEditModal.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\FileFlowsCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\CegidScheduledJobModal.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\ScheduledJobsBankPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\ScheduledJobsCegidPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\ScheduledJobsPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\SpecificEditModal.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\CegidPanel.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\ScheduledJobsTabFileFlowsPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\ScheduledSpecificPage.cs" />
+    <Compile Include="PageObjects\Jobs\ScheduledJobs\SpecificCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\ConverterDetailsPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\ConvertersCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\ConvertJobNotificationCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\CreateCustomerJobNotificationModel.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\CreateSageJobNotificationModel.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\CreateSpecificJobNotificationModel.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowJobNotificationCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowProviderCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowProviderPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowProvidersEditModal.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowTypeCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\FileFlowTypePage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\GuestMappingsPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\JobNotifications.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\SettingsCreateModalPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\SettingsPage.cs" />
+    <Compile Include="PageObjects\Jobs\Settings\SettingsTabConvertersPage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetIntolerancePage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetMassiveDeletePopup.cs" />
+    <Compile Include="PageObjects\Menus\FoodCost\FoodCostPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenuMassiveDeletePage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusDisplayPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusMassiveDeletePopup.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\PdfKeywordSearcher.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeKeywordPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeMassiveDeletePopup.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeUseCaseTab.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccountingCreateRedistributiveSupplierTaxModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccountingCreateRedistributiveCustomerTaxModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccountingCreateRedistributiveTaxModalPageBase.cs" />
+    <Compile Include="PageObjects\Parameters\Clinic\ParametersClinic.cs" />
+    <Compile Include="PageObjects\Parameters\Flights\ParametersFlightAircraft.cs" />
+    <Compile Include="PageObjects\Parameters\Flights\ParametersFlightHandler.cs" />
+    <Compile Include="PageObjects\Parameters\Flights\ParametresFlights.cs" />
+    <Compile Include="PageObjects\Parameters\Logs\ParametersLogs.cs" />
+    <Compile Include="PageObjects\Parameters\Tablet\ParametersTablet.cs" />
+    <Compile Include="PageObjects\Production\CustomerOrder\CustomerOrderIMessagesPage.cs" />
+    <Compile Include="PageObjects\Production\EarlyProduction\EarlyProductionFavoriteModal.cs" />
+    <Compile Include="PageObjects\Production\EarlyProduction\EarlyProductionPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionCO\ProductionCOCreateModalPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionCO\ProductionCODetailsPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionCO\ProductionCOOutputFormPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionCO\ProductionCOPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionManagement\EditFavoriteModal.cs" />
+    <Compile Include="PageObjects\Production\Setup\SetupFilterAndFavoritesPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\BestPriceModal.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemLastOrdersNotReceivedPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemLastOutputFormsPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemStoragePage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\MassiveDeleteModal.cs" />
+    <Compile Include="PageObjects\Purchasing\Product\ProductPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierAccountingsTab.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierAccountingsTiersDetailsTab.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierCertificationTab.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierEDITab.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierGeneralInfoTab.cs" />
+    <Compile Include="PageObjects\Shared\ComboBoxOptions.cs" />
+    <Compile Include="PageObjects\Shared\ExcelColumnComparer.cs" />
+    <Compile Include="PageObjects\Shared\GenericExport.cs" />
+    <Compile Include="PageObjects\Shared\PDFHelper.cs" />
+    <Compile Include="PageObjects\Shared\PdfTableExtractor.cs" />
+    <Compile Include="PageObjects\TabletApp\DatasheetTabletAppPage.cs" />
+    <Compile Include="PageObjects\TabletApp\DetailFlightTabletAppPage.cs" />
+    <Compile Include="PageObjects\TabletApp\FlightTabletAppPage.cs" />
+    <Compile Include="PageObjects\TabletApp\PlateauFlightTabletAppPage.cs" />
+    <Compile Include="PageObjects\TabletApp\TimeBlockTabletAppPage.cs" />
+    <Compile Include="PageObjects\TabletApp\ToDoListTabletAppPage.cs" />
+    <Compile Include="PageObjects\ToDoList\Scheduler\SchedulerCreateModalPage.cs" />
+    <Compile Include="PageObjects\ToDoList\Scheduler\ScheduleDetailsPage.cs" />
+    <Compile Include="PageObjects\ToDoList\Scheduler\SchedulerPage.cs" />
+    <Compile Include="PageObjects\ToDoList\Tasks\TasksGeneralInfo.cs" />
+    <Compile Include="PageObjects\ToDoList\Tasks\TasksPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsChecks.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsFooter.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryExpiry.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormExpiry.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNoteExpiry.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesClaims.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesEditClaim.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNoteToOuputForm.cs" />
+    <Compile Include="Parameters\Accounting\RedistributiveCustomerTax\RedistributiveCustomerTaxTest.cs" />
+    <Compile Include="Parameters\Accounting\RedistributiveSupplierTax\RedistributiveSupplierTaxTest.cs" />
+    <Compile Include="Parameters\Accounting\RedistributiveTaxTestBase.cs" />
+    <Compile Include="Parameters\Flight\FlightTest.cs" />
+    <Compile Include="Parameters\Production\ProductionTest.cs" />
+    <Compile Include="Parameters\Sites\FiscalEntities\FiscalEntitiesTest.cs" />
+    <Compile Include="Production\EarlyProduction\EarlyProductionTest.cs" />
+    <Compile Include="Production\ProductionCO\ProductionCOTest.cs" />
+    <Compile Include="Purchasing\ProductTests.cs" />
+    <Compile Include="TabletApp\Datasheets\DatasheetsTest.cs" />
+    <Compile Include="TabletApp\Flight\FlightTest.cs" />
+    <Compile Include="TabletApp\HACCPBlankDocs\HACCPBlankDocsTest.cs" />
+    <Compile Include="Flights\LpCart\LpCartTest.cs" />
+    <Compile Include="Flights\Trolleys\TrolleyTest.cs" />
+    <Compile Include="Menus\Datasheets\DatasheetTests.cs" />
+    <Compile Include="Menus\Menus\MenusTests.cs" />
+    <Compile Include="PageObjects\Accounting\FreePrice\FreePriceDetailsPage.cs" />
+    <Compile Include="PageObjects\Accounting\FreePrice\FreePricePage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\InvoiceAccountingPage.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesAccounting.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesFooterPage.cs" />
+    <Compile Include="PageObjects\Admin\ApplicationSettingsModalPage.cs" />
+    <Compile Include="PageObjects\Admin\ApplicationSettingsPage.cs" />
+    <Compile Include="PageObjects\ClearCachePage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalCustomerOrdersPage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalCustomerOrdersPageModal.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalCustomerOrdersPageResult.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalLoginPage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalQtyManagementPage.cs" />
+    <Compile Include="PageObjects\CustomerPortal\CustomerPortalUpdatePage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceImportPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightEditModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartCartDetailPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartCreateLpCartSchemeModal.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartCreateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartDuplicateLpCartModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartDuplicateTrolleyModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartEditLpCartSchemeModal.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartFlightDetailPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Flights\LpCart\LpCartPage.cs" />
+    <Compile Include="PageObjects\Flights\Trolleys\ConfigurationModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Trolleys\TrolleyAdjustingPage.cs" />
+    <Compile Include="PageObjects\Flights\Trolleys\TrolleyCountingPage.cs" />
+    <Compile Include="PageObjects\Flights\Trolleys\TrolleyDetailedLabelPage.cs" />
+    <Compile Include="PageObjects\Flights\Trolleys\TrolleyLightLabelPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeIntolerancePage.cs" />
+    <Compile Include="PageObjects\Parameters\Production\ParametersSetup.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionGenerateOutputFormModal.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionCustomerOrderTabPage.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionWorkshopTabPage.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionCustomerTabPage.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionRecipeTabPage.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionSearchResultsMenuTabPage.cs" />
+    <Compile Include="PageObjects\Production\Production\ProductionPage.cs" />
+    <Compile Include="PageObjects\Production\Setup\SetupDeliveryRoundTabPage.cs" />
+    <Compile Include="PageObjects\Production\Setup\SetupPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemKeywordPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemPicturePage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemLastReceiptNotesPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemLabelPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemSearchCiqualModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemDieteticPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemUseCasePage.cs" />
+    <Compile Include="PageObjects\Shared\MailPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerBuyOnBoardPage.cs" />
+    <Compile Include="PageObjects\Customers\Delivery\DeliveryGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Customers\PriceList\PriceListImportPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceDeliveryPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceLoadingPlanPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceMenuPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServicePricePage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceCreateModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServiceCreatePriceModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Service\ServicePage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetCreateModalPage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetCreateNewRecipePage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetDetailsPage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Menus\Datasheet\DatasheetPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusDayViewPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\InfosPOetRN.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusCreateModalPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusPage.cs" />
+    <Compile Include="PageObjects\Menus\Menus\MenusWeekViewPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\DuplicateRecipesVariantModalPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeDuplicateVariantPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipeImportIngredientPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipesVariantPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipesCreateModalPage.cs" />
+    <Compile Include="PageObjects\Menus\Recipes\RecipesPage.cs" />
+    <Compile Include="Menus\Recipes\RecipesTests.cs" />
+    <Compile Include="Accounting\Invoices\InvoiceManualTests.cs" />
+    <Compile Include="Accounting\Invoices\InvoiceAutoTests.cs" />
+    <Compile Include="Accounting\SupplierInvoices\SupplierInvoicesTests.cs" />
+    <Compile Include="Customers\Customer\CustomerTest.cs" />
+    <Compile Include="Customers\DeliveryRound\DeliveryRoundTest.cs" />
+    <Compile Include="Customers\Delivery\DeliveryTest.cs" />
+    <Compile Include="Customers\PriceList\PriceListTest.cs" />
+    <Compile Include="Customers\Reinvoice\ReinvoceTest.cs" />
+    <Compile Include="Flights\Flight\FlightTest.cs" />
+    <Compile Include="Flights\LoadingPlans\LoadingPlansTest.cs" />
+    <Compile Include="Flights\Schedule\ScheduleTest.cs" />
+    <Compile Include="PageObjects\Accounting\FreePrice\CreateFreePriceModalPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\InvoiceDetailsPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\InvoiceGeneralInformations.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\InvoiceFooterPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\InvoicesPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\AutoInvoiceCreateModalPage.cs" />
+    <Compile Include="PageObjects\Accounting\Invoice\ManualInvoiceCreateModalPage.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesGeneralInformation.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesItem.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesCreateModalPage.cs" />
+    <Compile Include="PageObjects\Accounting\SupplierInvoices\SupplierInvoicesPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerAgreementPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerCardexNotifPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerContactsPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerCreateModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerDiscountPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerPriceListPage.cs" />
+    <Compile Include="PageObjects\Customers\Customer\CustomerReinvoicePage.cs" />
+    <Compile Include="PageObjects\Customers\DeliveryRound\DeliveryRoundCreateModalpage.cs" />
+    <Compile Include="PageObjects\Customers\DeliveryRound\DeliveryRoundDeliveryPage.cs" />
+    <Compile Include="PageObjects\Customers\DeliveryRound\DeliveryRoundGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Customers\DeliveryRound\DeliveryRoundPage.cs" />
+    <Compile Include="PageObjects\Customers\Delivery\DeliveryCreateModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Delivery\DeliveryLoadingPage.cs" />
+    <Compile Include="PageObjects\Customers\Delivery\DeliveryPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LinkedLoadingPlansPage.cs" />
+    <Compile Include="PageObjects\Customers\PriceList\PriceListGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Customers\PriceList\PriceListDetailsPage.cs" />
+    <Compile Include="PageObjects\Customers\PriceList\PriceListPage.cs" />
+    <Compile Include="PageObjects\Customers\PriceList\PricingCreateModalpage.cs" />
+    <Compile Include="PageObjects\Customers\Reinvoice\ReinvoiceCreateModalPage.cs" />
+    <Compile Include="PageObjects\Customers\Reinvoice\ReinvoicePage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightDetailsPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightMultiCreateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightCreateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansCreateModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansDetailsPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansDuplicationModalPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansFlightPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansGeneralInformationsPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansPage.cs" />
+    <Compile Include="PageObjects\Flights\LoadingPlans\LoadingPlansSplitModalPage.cs" />
+    <Compile Include="PageObjects\Flights\Schedule\SchedulePage.cs" />
+    <Compile Include="PageObjects\Flights\Flight\FlightPage.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\LoginPage.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccounting.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccountingCreateSiteModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Accounting\ParametersAccountingEditJournalModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Customer\ParametersCustomer.cs" />
+    <Compile Include="PageObjects\Parameters\Customer\ParametersCustomerCreateServiceModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\GlobalSettings\ParametersGlobalSettings.cs" />
+    <Compile Include="PageObjects\Parameters\GlobalSettings\ParametersGlobalSettingsModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Portal\ParametersPortal.cs" />
+    <Compile Include="PageObjects\Parameters\Production\ParametersProduction.cs" />
+    <Compile Include="PageObjects\Parameters\Production\ParametersProductionModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\Purchasing\ParametersPurchasing.cs" />
+    <Compile Include="PageObjects\Parameters\Sites\ParametersSites.cs" />
+    <Compile Include="PageObjects\Parameters\Sites\ParametersSitesModalPage.cs" />
+    <Compile Include="PageObjects\Parameters\User\ParametersUser.cs" />
+    <Compile Include="PageObjects\Production\CustomerOrder\CustomerOrderCreateModalPage.cs" />
+    <Compile Include="PageObjects\Production\CustomerOrder\CustomerOrderGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Production\CustomerOrder\CustomerOrderItem.cs" />
+    <Compile Include="PageObjects\Production\CustomerOrder\CustomerOrderPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionManagement\FilterAndFavoritesPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionManagement\QuantityAdjustmentsPage.cs" />
+    <Compile Include="PageObjects\Production\ProductionManagement\ResultModal.cs" />
+    <Compile Include="PageObjects\Production\ProductionManagement\ResultPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemCreateNewPackagingModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemImportPage.cs" />
+    <Compile Include="PageObjects\Production\Dispatch\DispatchPage.cs" />
+    <Compile Include="PageObjects\Production\Dispatch\PrevisionalQtyPage.cs" />
+    <Compile Include="PageObjects\Production\Dispatch\QuantityToInvoicePage.cs" />
+    <Compile Include="PageObjects\Production\Dispatch\QuantityToProducePage.cs" />
+    <Compile Include="PageObjects\Production\Dispatch\SupplierOrderModal.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemIntolerancePage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemsCommentItem.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemGeneralInformationPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemCreateModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Needs\FilterAndFavoritesNeedsPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Needs\QuantityAdjustmentsNeedsPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Needs\ResultModalNeeds.cs" />
+    <Compile Include="PageObjects\Purchasing\Needs\ResultPageNeeds.cs" />
+    <Compile Include="PageObjects\Purchasing\PurchaseOrder\PurchaseOrderItem.cs" />
+    <Compile Include="PageObjects\Purchasing\PurchaseOrder\PurchaseOrderGeneralInformation.cs" />
+    <Compile Include="PageObjects\Purchasing\PurchaseOrder\CreatePurchaseOrderModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Item\ItemPage.cs" />
+    <Compile Include="PageObjects\Purchasing\PurchaseOrder\PurchaseOrdersPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierImport.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierItem.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierCreateModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SuppliersPage.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierDeliveriesTab.cs" />
+    <Compile Include="PageObjects\Purchasing\Suppliers\SupplierContactTab.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\CreateSupplyOrderModalPage.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrderBySuppliers.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrderGeneralInformation.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrderImport.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrderItem.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrderRecipes.cs" />
+    <Compile Include="PageObjects\Purchasing\SupplyOrder\SupplyOrdersPage.cs" />
+    <Compile Include="PageObjects\Shared\ExploitTextFiles.cs" />
+    <Compile Include="PageObjects\Shared\MessageErreur.cs" />
+    <Compile Include="PageObjects\Shared\OpenXmlExcel.cs" />
+    <Compile Include="PageObjects\Shared\PageBase.cs" />
+    <Compile Include="PageObjects\Shared\PrintReportPage.cs" />
+    <Compile Include="PageObjects\TabletApp\TabletAppPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimEditClaimForm.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsGeneralInformation.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsCreateModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Claims\ClaimsItem.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryAccountingPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryCreateModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryFooterPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryGeneralInformation.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoriesPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryItem.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\InventoryValidationModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\Inventory\PrintPreparationSheetModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormAccountingPage.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormFooterPage.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormGroups.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormQualityChecks.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormGeneralInformation.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormItem.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormCreateModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\OutputForm\OutputFormPage.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesAccountingPage.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesFooterPage.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesQualityChecks.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesCreateModalPage.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesGeneralInformation.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesItem.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesPage.cs" />
+    <Compile Include="PageObjects\Warehouse\ReceiptNotes\ReceiptNotesSecurityChecks.cs" />
+    <Compile Include="Production\CustomerOrder\CustomerOrderTest.cs" />
+    <Compile Include="Production\Dispatch\DispatchTest.cs" />
+    <Compile Include="Production\ProductionManagement\ProductionManagementTest.cs" />
+    <Compile Include="Production\Setup\SetupTest.cs" />
+    <Compile Include="Production\SubProduction\ProductionTest.cs" />
+    <Compile Include="Purchasing\NeedsTest.cs" />
+    <Compile Include="Purchasing\PurchaseBookTests.cs" />
+    <Compile Include="Purchasing\SupplierTests.cs" />
+    <Compile Include="Purchasing\ItemTests.cs" />
+    <Compile Include="Purchasing\PurchaseOrderTests.cs" />
+    <Compile Include="Purchasing\SupplyOrderTests.cs" />
+    <Compile Include="TabletApp\HACCPProdInflight\HACCPProdInflightTest.cs" />
+    <Compile Include="TabletApp\TimeBlock\TimeBlockTest.cs" />
+    <Compile Include="TabletApp\ToDoList\ToDoListTest.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDoList\Scheduler\SchedulerTest.cs" />
+    <Compile Include="ToDoList\Tasks\TasksTest.cs" />
+    <Compile Include="Utils\DateUtils.cs" />
+    <Compile Include="Utils\IWebElementExtensions.cs" />
+    <Compile Include="Warehouse\Claims\ClaimsTest.cs" />
+    <Compile Include="Warehouse\Inventory\InventoryTest.cs" />
+    <Compile Include="Warehouse\OutputForm\OutputFormTest.cs" />
+    <Compile Include="Warehouse\ReceiptNotes\ReceiptNotesTest.cs" />
+    <Compile Include="WebDriverFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_M_Action_CustomerSrv.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionIDCustomerSrvExist.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionAddDatasheet.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionAddDatasheetNotExist.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionCategoryManyLine_Error.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionCategoryManyLine.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionIDCustomerSrvvEmpty.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_A_ActionDefaultLoadingModeNotExist.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Customers\Service\Test_CU_SERV_Import_With_M_ActionDefaultLoadingModeError.xlsx" />
+    <None Include="PageObjects\Customers\PriceList\PR_PRLI_import_test.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PageObjects\Customers\Service\isGeneric.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PageObjects\Customers\Service\isInvoiced.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PageObjects\Customers\Service\isProduced.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PageObjects\Flights\Crew\ImportCrew_test.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PageObjects\Flights\LpCart\LPCarts_test.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Scripts\CreateTestEnvironment.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Winrest_Filtered.runsettings">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Winrest.runsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PageObjects\Accounting\Invoice\piecejointe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Flights\Flight\modele.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Menus\Datasheet\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Menus\Datasheet\test2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Menus\Recipes\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Purchasing\Item\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PageObjects\Warehouse\Claims\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\logo_petit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pizza.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pizza_petite-old.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pizza_petite-old2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\pizza_petite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Flights\ClosingPeriods\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.131.0.6778.8500\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.131.0.6778.8500\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.10\build\net46\MSTest.TestAdapter.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.131.0.6778.8500\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.131.0.6778.8500\build\Selenium.WebDriver.ChromeDriver.targets')" />
+</Project>

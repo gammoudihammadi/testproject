@@ -1,0 +1,475 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|c:\\users\\tsi\\source\\projectwinrest\\newrest.winrest.functionaltests\\newrest.winrest.functionaltests\\todolist\\tasks\\taskstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\todolist\\tasks\\taskstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\accounting\\freeprice\\freepricetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\accounting\\freeprice\\freepricetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\cegidjobpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\cegidjobpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC4DE038-5AA5-4118-BC63-636EE3C88844}|Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj|c:\\users\\tsi\\source\\projectwinrest\\newrest.winrest.functionaltests\\newrest.winrest.automaticfunctionnaltestsreport\\newrest.winrest.automaticfunctionnaltestsreport.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DC4DE038-5AA5-4118-BC63-636EE3C88844}|Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj|solutionrelative:newrest.winrest.automaticfunctionnaltestsreport\\newrest.winrest.automaticfunctionnaltestsreport.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\accounting\\edi\\editests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\accounting\\edi\\editests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\accounting\\invoices\\invoicemanualtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\accounting\\invoices\\invoicemanualtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\jobspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\jobspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\winrest.runsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\winrest.runsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TSI\\Downloads\\newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\production\\productionmanagement\\productionmanagementtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\production\\productionmanagement\\productionmanagementtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\customerportal\\customerportaltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\customerportal\\customerportaltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\tabletapp\\haccpprodinflight\\haccpprodinflighttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\tabletapp\\haccpprodinflight\\haccpprodinflighttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\todolist\\scheduler\\schedulertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\todolist\\scheduler\\schedulertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\flights\\timeblock\\timeblocktest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\flights\\timeblock\\timeblocktest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edisupplierinvoicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edisupplierinvoicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\customers\\service\\servicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\customers\\service\\servicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\production\\customerorder\\customerordertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\production\\customerorder\\customerordertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\flights\\flight\\flighttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\flights\\flight\\flighttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\cegidjobdetailpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\jobs\\jobs\\cegidjobdetailpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edicustomerorderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edicustomerorderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edicustomerinvoicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274E0B0F-54F3-4429-A294-B36ED3DBBD2C}|Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests.csproj|solutionrelative:newrest.winrest.functionaltests\\pageobjects\\accounting\\edi\\edicustomerinvoicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{5da8d69b-058a-4294-a87a-f4f7ae2983b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj",
+              "RelativeDocumentMoniker": "Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj",
+              "RelativeToolTip": "Newrest.Winrest.AutomaticFunctionnalTestsReport\\Newrest.Winrest.AutomaticFunctionnalTestsReport.csproj",
+              "ViewState": "AgIAABAAAAAAAAAAAAAxwBEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-05T09:33:36.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TasksTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\ToDoList\\Tasks\\TasksTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\ToDoList\\Tasks\\TasksTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\ToDoList\\Tasks\\TasksTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\ToDoList\\Tasks\\TasksTest.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAUwFUBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:23:59.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage",
+              "DocumentMoniker": "C:\\Users\\TSI\\Downloads\\newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage",
+              "ToolTip": "C:\\Users\\TSI\\Downloads\\newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\newrest_TESTAUTO-AGENT2_2024-12-02.18_51_06.coverage",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002488|",
+              "WhenOpened": "2024-12-03T16:29:59.596Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a975660a-81e4-4830-aa25-1b824c3bf732}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CegidJobPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:25:14.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FreePriceTests.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\FreePrice\\FreePriceTests.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Accounting\\FreePrice\\FreePriceTests.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\FreePrice\\FreePriceTests.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Accounting\\FreePrice\\FreePriceTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:12:24.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\packages.config",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\packages.config",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\packages.config",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\packages.config",
+              "ViewState": "AgIAABYAAAAAAAAAAAAxwB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-04T19:29:05.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EdiTests.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\EDI\\EdiTests.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Accounting\\EDI\\EdiTests.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\EDI\\EdiTests.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Accounting\\EDI\\EdiTests.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:39:02.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestBase.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\TestBase.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\TestBase.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\TestBase.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\TestBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:29:26.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JobsPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\JobsPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\JobsPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\JobsPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\JobsPage.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAABBwCYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:36:17.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\app.config",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\app.config",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\app.config",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-04T19:29:21.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Winrest.runsettings",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Winrest.runsettings",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Winrest.runsettings",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Winrest.runsettings",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Winrest.runsettings",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwCkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-03T10:42:20.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceManualTests.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\Invoices\\InvoiceManualTests.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Accounting\\Invoices\\InvoiceManualTests.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Accounting\\Invoices\\InvoiceManualTests.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Accounting\\Invoices\\InvoiceManualTests.cs",
+              "ViewState": "AgIAAEMNAAAAAAAAAAAswFINAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:41:47.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductionManagementTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Production\\ProductionManagement\\ProductionManagementTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Production\\ProductionManagement\\ProductionManagementTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Production\\ProductionManagement\\ProductionManagementTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Production\\ProductionManagement\\ProductionManagementTest.cs",
+              "ViewState": "AgIAAGUDAAAAAAAAAIBJwGcDAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:31:16.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\LoginPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\LoginPage.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAABRwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:36:21.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EdiSupplierInvoicesPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiSupplierInvoicesPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiSupplierInvoicesPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiSupplierInvoicesPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiSupplierInvoicesPage.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:36:10.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TimeBlockTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Flights\\TimeBlock\\TimeBlockTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Flights\\TimeBlock\\TimeBlockTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Flights\\TimeBlock\\TimeBlockTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Flights\\TimeBlock\\TimeBlockTest.cs",
+              "ViewState": "AgIAANoBAAAAAAAAAABRwO4BAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:37:11.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SchedulerTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\ToDoList\\Scheduler\\SchedulerTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\ToDoList\\Scheduler\\SchedulerTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\ToDoList\\Scheduler\\SchedulerTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\ToDoList\\Scheduler\\SchedulerTest.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAABRwGkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:38:13.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HACCPProdInflightTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\TabletApp\\HACCPProdInflight\\HACCPProdInflightTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\TabletApp\\HACCPProdInflight\\HACCPProdInflightTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\TabletApp\\HACCPProdInflight\\HACCPProdInflightTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\TabletApp\\HACCPProdInflight\\HACCPProdInflightTest.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAABRwDwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:38:26.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerPortalTests.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\CustomerPortal\\CustomerPortalTests.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\CustomerPortal\\CustomerPortalTests.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\CustomerPortal\\CustomerPortalTests.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\CustomerPortal\\CustomerPortalTests.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAIBJwIoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:36:38.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CustomerOrderTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Production\\CustomerOrder\\CustomerOrderTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Production\\CustomerOrder\\CustomerOrderTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Production\\CustomerOrder\\CustomerOrderTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Production\\CustomerOrder\\CustomerOrderTest.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAADgv2gBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:36:33.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CegidJobDetailPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobDetailPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobDetailPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobDetailPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Jobs\\Jobs\\CegidJobDetailPage.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:31:09.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EdiPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiPage.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:31:02.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Customers\\Service\\ServiceTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Customers\\Service\\ServiceTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Customers\\Service\\ServiceTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Customers\\Service\\ServiceTest.cs",
+              "ViewState": "AgIAAIUjAAAAAAAAAAAiwIojAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:26:23.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EdiCustomerOrderPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerOrderPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerOrderPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerOrderPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerOrderPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:30:04.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EdiCustomerInvoicesPage.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerInvoicesPage.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerInvoicesPage.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerInvoicesPage.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\PageObjects\\Accounting\\Edi\\EdiCustomerInvoicesPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:29:54.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FlightTest.cs",
+              "DocumentMoniker": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Flights\\Flight\\FlightTest.cs",
+              "RelativeDocumentMoniker": "Newrest.Winrest.FunctionalTests\\Flights\\Flight\\FlightTest.cs",
+              "ToolTip": "C:\\Users\\TSI\\source\\projectwinrest\\Newrest.Winrest.FunctionalTests\\Newrest.Winrest.FunctionalTests\\Flights\\Flight\\FlightTest.cs",
+              "RelativeToolTip": "Newrest.Winrest.FunctionalTests\\Flights\\Flight\\FlightTest.cs",
+              "ViewState": "AgIAAGYDAAAAAAAAAIBJwGgDAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:24:29.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

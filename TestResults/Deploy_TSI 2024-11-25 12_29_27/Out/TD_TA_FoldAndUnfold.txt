@@ -1,0 +1,2 @@
+C:\Users\TSI\source\projectwinrest\Newrest.Winrest.FunctionalTests\TestResults\Deploy_TSI 2024-11-25 12_29_27\Out\pizza.png
+isElementVisible not Displayed : By.XPath: /html/body/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/table/tbody[2]/tr
